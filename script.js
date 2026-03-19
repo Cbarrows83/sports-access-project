@@ -1,47 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const url = window.location.href;
+  const url = window.location.href;
 
-/* SNOW ONLY ON SIDES */
-if(url.includes("snow")){
+  /* ❄ SNOW ONLY ON SNOW PAGE (SIDES ONLY) */
+  if (url.includes("snow")) {
 
-for(let i=0;i<40;i++){
+    const snowCount = 40;
 
-let snow=document.createElement("div");
-snow.className="snowflake";
-snow.innerHTML="❄";
+    for (let i = 0; i < snowCount; i++) {
 
-let side = Math.random() > 0.5 ? "left" : "right";
+      const snow = document.createElement("div");
+      snow.className = "snowflake";
+      snow.innerHTML = "❄";
 
-snow.style[side] = (Math.random()*30) + "px";
-snow.style.animationDuration = (4 + Math.random()*5) + "s";
-snow.style.fontSize = (10 + Math.random()*10) + "px";
+      // Randomly choose left or right side
+      const side = Math.random() > 0.5 ? "left" : "right";
 
-document.body.appendChild(snow);
+      snow.style[side] = Math.random() * 25 + "px"; // keeps it near edge
+      snow.style.top = "-20px";
 
-}
+      snow.style.animationDuration = (4 + Math.random() * 4) + "s";
+      snow.style.fontSize = (10 + Math.random() * 10) + "px";
+      snow.style.opacity = 0.6 + Math.random() * 0.4;
 
-}
+      document.body.appendChild(snow);
+    }
+  }
 
-/* SMOOTH PAGE TRANSITION */
-document.querySelectorAll("a").forEach(link => {
+  /* ✨ SMOOTH PAGE TRANSITION */
+  document.querySelectorAll("a").forEach(link => {
 
-link.addEventListener("click", function(e){
+    link.addEventListener("click", function(e) {
 
-if(this.href.includes(window.location.hostname)){
+      if (this.href.includes(window.location.hostname)) {
 
-e.preventDefault();
+        e.preventDefault();
 
-document.body.style.opacity = "0";
+        document.body.style.opacity = "0";
 
-setTimeout(()=>{
-window.location = this.href;
-}, 300);
+        setTimeout(() => {
+          window.location = this.href;
+        }, 200);
+      }
 
-}
+    });
 
-});
-
-});
+  });
 
 });
