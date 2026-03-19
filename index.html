@@ -1,60 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Access Sports</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Sports</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-  <h1 class="logo">
-    <img src="images/logo.png" class="logo-img">
-    ACCESS SPORTS
-  </h1>
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Access Sports logo" class="brand-logo">
+      <span>ACCESS SPORTS</span>
+    </a>
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="golf.html">Golf</a></li>
-    <li><a href="snow.html">Snow Sports</a></li>
-    <li><a href="project.html">Project</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="golf.html">Golf</a></li>
+      <li><a href="snow.html">Snow Sports</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
 
-<header class="hero" style="background-image: url('images/hero.jpg');">
-  <div class="hero-text">
-    <h1>Making Golf & Snow Sports Accessible</h1>
-    <p>Helping students access sports that are often limited by cost and opportunity.</p>
-  </div>
-</header>
+  <header class="page-hero" style="background-image: linear-gradient(rgba(8,12,18,0.55), rgba(8,12,18,0.72)), url('images/hero.jpg');">
+    <div class="hero-inner">
+      <p class="eyebrow">Access Sports Initiative</p>
+      <h1>Making Golf &amp; Snow Sports More Accessible</h1>
+      <p class="hero-subtext">
+        This project focuses on expanding access to golf and snow sports for students by addressing cost, transportation, and opportunity barriers.
+      </p>
+    </div>
+  </header>
 
-<section class="links">
+  <main>
+    <section class="home-intro">
+      <div class="home-intro-card">
+        <p class="section-label">Why It Matters</p>
+        <h2>Some sports stay out of reach for too many students</h2>
+        <p>
+          Golf, skiing, and snowboarding can build confidence, discipline, and lifelong interests, but many students never get the chance to participate because of the cost of equipment, travel, and entry fees.
+        </p>
+        <p>
+          This website explores those barriers and highlights practical solutions that could make these sports more available at the high school level.
+        </p>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>Golf</h2>
-    <p>Explore ways to make golf more accessible.</p>
-    <a href="golf.html">View Page</a>
-  </div>
+    <section class="home-cards">
+      <a href="golf.html" class="home-card">
+        <img src="images/golf1.jpg" alt="Golf section preview">
+        <div class="home-card-content">
+          <p class="section-label">Golf</p>
+          <h3>Making Golf Accessible</h3>
+          <p>
+            Explore the major barriers that make golf difficult to access and the solutions schools could use to open the sport to more students.
+          </p>
+          <span class="card-link">View Golf Page</span>
+        </div>
+      </a>
 
-  <div class="card">
-    <h2>Snow Sports</h2>
-    <p>Learn how skiing and snowboarding can be opened to more students.</p>
-    <a href="snow.html">View Page</a>
-  </div>
+      <a href="snow.html" class="home-card">
+        <img src="images/snow1.jpg" alt="Snow sports section preview">
+        <div class="home-card-content">
+          <p class="section-label">Snow Sports</p>
+          <h3>Opening the Slopes</h3>
+          <p>
+            Learn how cost, equipment, and transportation limit access to skiing and snowboarding for many students.
+          </p>
+          <span class="card-link">View Snow Sports Page</span>
+        </div>
+      </a>
 
-  <div class="card">
-    <h2>Project</h2>
-    <p>Understand the purpose and research behind this project.</p>
-    <a href="project.html">View Page</a>
-  </div>
+      <a href="project.html" class="home-card">
+        <img src="images/project1.jpg" alt="Project section preview">
+        <div class="home-card-content">
+          <p class="section-label">Project</p>
+          <h3>About the Project</h3>
+          <p>
+            See the purpose, research, and bigger message behind this project and why accessibility in sports matters.
+          </p>
+          <span class="card-link">View Project Page</span>
+        </div>
+      </a>
+    </section>
+  </main>
 
-</section>
+  <footer class="site-footer">
+    <p>Access Sports Initiative</p>
+  </footer>
 
-<footer>
-  <p>Access Sports Initiative</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
