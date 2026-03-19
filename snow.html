@@ -1,61 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Snow Sports</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snow Sports Accessibility | Access Sports</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-  <h1 class="logo">
-    <img src="images/logo.png" class="logo-img">
-    ACCESS SPORTS
-  </h1>
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Access Sports logo" class="brand-logo">
+      <span>ACCESS SPORTS</span>
+    </a>
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="golf.html">Golf</a></li>
-    <li><a href="snow.html">Snow Sports</a></li>
-    <li><a href="project.html">Project</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="golf.html">Golf</a></li>
+      <li><a href="snow.html" class="active">Snow Sports</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
 
-<header class="hero" style="background-image: url('images/snow-bg.jpg');">
-  <div class="hero-text">
-    <h1>Opening the Slopes</h1>
-  </div>
-</header>
+  <header class="page-hero" style="background-image: linear-gradient(rgba(8,13,20,0.55), rgba(8,13,20,0.65)), url('images/snow-bg.jpg');">
+    <div class="hero-inner">
+      <p class="eyebrow">Student Access</p>
+      <h1>Opening Snow Sports to More Students</h1>
+      <p class="hero-subtext">
+        Skiing and snowboarding are exciting and memorable sports, but high costs and transportation barriers keep many students from ever experiencing them.
+      </p>
+    </div>
+  </header>
 
-<section class="section">
-  <img src="images/snow1.jpg">
-  <div class="section-text">
-    <h2>The Problem</h2>
-    <p>Snow sports require expensive lift tickets, rentals, and travel, making them inaccessible for many students.</p>
-  </div>
-</section>
+  <main>
+    <section class="split-section">
+      <div class="split-image-wrap">
+        <img src="images/snow1.jpg" alt="Students skiing or snowboarding" class="split-image">
+      </div>
+      <div class="split-text glass-card">
+        <p class="section-label">The Problem</p>
+        <h2>Snow sports can be difficult to access</h2>
+        <p>
+          Snowboarding and skiing require more than interest. Students often need transportation to resorts, rental equipment, warm clothing, and lift tickets before they can even try the sport once.
+        </p>
+        <p>
+          Because of that, many students never get the chance to build confidence or discover whether they enjoy it.
+        </p>
+      </div>
+    </section>
 
-<section class="section reverse">
-  <img src="images/snow2.jpg">
-  <div class="section-text">
-    <h2>Barriers</h2>
-    <p>Distance to resorts and the cost of equipment create major limitations for participation.</p>
-  </div>
-</section>
+    <section class="feature-band">
+      <div class="feature-band-inner">
+        <div class="mini-card">
+          <h3>Lift Tickets</h3>
+          <p>Single-day access can already be too expensive for many families.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Rental Gear</h3>
+          <p>Boards, skis, boots, helmets, and jackets add even more cost.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Travel Distance</h3>
+          <p>Mountain resorts are far away, which makes transportation a major barrier.</p>
+        </div>
+      </div>
+    </section>
 
-<section class="section">
-  <img src="images/snow3.jpg">
-  <div class="section-text">
-    <h2>Solutions</h2>
-    <p>Schools can organize group trips, provide rental access, and partner with resorts to reduce cost.</p>
-  </div>
-</section>
+    <section class="split-section reverse">
+      <div class="split-image-wrap">
+        <img src="images/snow2.jpg" alt="Snowboarding gear or mountain scene" class="split-image">
+      </div>
+      <div class="split-text glass-card">
+        <p class="section-label">Barriers</p>
+        <h2>The cost adds up quickly</h2>
+        <p>
+          Snow sports are not just one purchase. They often require repeated spending on tickets, rentals, gas, food, and lessons. For students who are just beginning, that can make the sport feel unrealistic.
+        </p>
+        <ul class="clean-list">
+          <li>Expensive resort admission</li>
+          <li>Rental and clothing costs</li>
+          <li>Transportation to mountain areas</li>
+          <li>Limited beginner-friendly school programs</li>
+        </ul>
+      </div>
+    </section>
 
-<footer>
-  <p>Access Sports Initiative</p>
-</footer>
+    <section class="split-section">
+      <div class="split-image-wrap">
+        <img src="images/snow3.jpg" alt="Students learning snow sports" class="split-image">
+      </div>
+      <div class="split-text glass-card">
+        <p class="section-label">Solutions</p>
+        <h2>Schools can create real entry points</h2>
+        <p>
+          Group trips, rental partnerships, and beginner lesson programs could make snow sports more realistic for students who otherwise would never have the chance to participate.
+        </p>
+        <p>
+          A school-based program would not just lower cost. It would also create community, confidence, and a clear path for new students to get involved.
+        </p>
+      </div>
+    </section>
+  </main>
 
-<script src="script.js"></script>
+  <footer class="site-footer">
+    <p>Access Sports Initiative</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
