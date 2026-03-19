@@ -44,71 +44,30 @@ nav a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('images/hero.jpg') center/cover;
+  background-size: cover;
+  background-position: center;
 }
 
-/* CARDS */
-.links {
+/* SECTIONS */
+.section {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding: 50px;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
   flex-wrap: wrap;
 }
 
-.card {
-  background: #222;
-  padding: 25px;
-  width: 250px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.card a {
-  color: #4fd1ff;
-}
-
-/* PAGE HEADER */
-.page-header {
-  text-align: center;
-  padding: 50px;
-  background: #222;
-}
-
-/* CONTENT */
-.content {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-}
-
-.panel {
-  background: #1a1a1a;
-  padding: 25px;
-  border-radius: 10px;
-}
-
-/* IMAGE FIX */
-.feature-img {
+.section img {
   width: 100%;
-  max-width: 700px;
-  display: block;
-  margin: 20px auto;
+  max-width: 400px;
   border-radius: 10px;
 }
 
-.snowflake {
-  position: fixed;
-  color: white;
-  pointer-events: none;
-  z-index: 999;
-  animation: fall linear infinite;
-}
-
-@keyframes fall {
-  to {
-    transform: translateY(100vh);
-  }
+.section-text {
+  max-width: 400px;
 }
 
 /* FOOTER */
