@@ -97,6 +97,20 @@ nav a {
   border-radius: 10px;
 }
 
+.snowflake {
+  position: fixed;
+  color: white;
+  pointer-events: none;
+  z-index: 999;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
 /* FOOTER */
 footer {
   text-align: center;
