@@ -1,61 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Golf Accessibility</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Accessibility | Access Sports</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-  <h1 class="logo">
-    <img src="images/logo.png" class="logo-img">
-    ACCESS SPORTS
-  </h1>
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Access Sports logo" class="brand-logo">
+      <span>ACCESS SPORTS</span>
+    </a>
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="golf.html">Golf</a></li>
-    <li><a href="snow.html">Snow Sports</a></li>
-    <li><a href="project.html">Project</a></li>
-  </ul>
-</nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="golf.html" class="active">Golf</a></li>
+      <li><a href="snow.html">Snow Sports</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
 
-<header class="hero" style="background-image: url('images/golf-bg.jpg');">
-  <div class="hero-text">
-    <h1>Making Golf Accessible</h1>
-  </div>
-</header>
+  <header class="page-hero" style="background-image: linear-gradient(rgba(7,12,18,0.55), rgba(7,12,18,0.65)), url('images/golf-bg.jpg');">
+    <div class="hero-inner">
+      <p class="eyebrow">Student Access</p>
+      <h1>Making Golf More Accessible</h1>
+      <p class="hero-subtext">
+        Golf offers discipline, patience, and lifelong opportunities, but cost and access prevent many students from ever getting started.
+      </p>
+    </div>
+  </header>
 
-<section class="section">
-  <img src="images/golf1.jpg">
-  <div class="section-text">
-    <h2>The Problem</h2>
-    <p>Golf is one of the least accessible sports due to equipment costs, course fees, and lack of exposure for beginners.</p>
-  </div>
-</section>
+  <main>
+    <section class="split-section">
+      <div class="split-image-wrap">
+        <img src="images/golf1.jpg" alt="Student golfer" class="split-image">
+      </div>
+      <div class="split-text glass-card">
+        <p class="section-label">The Problem</p>
+        <h2>Golf often feels out of reach</h2>
+        <p>
+          For many students, golf can seem like a sport reserved for people with expensive equipment, private lessons, and easy access to courses. That image alone can discourage beginners before they even try.
+        </p>
+        <p>
+          Even students who are interested may not know where to start, who to ask, or how to afford the basic costs of participating.
+        </p>
+      </div>
+    </section>
 
-<section class="section reverse">
-  <img src="images/golf2.jpg">
-  <div class="section-text">
-    <h2>Barriers</h2>
-    <p>Clubs, greens fees, and transportation prevent many students from even trying the sport.</p>
-  </div>
-</section>
+    <section class="feature-band">
+      <div class="feature-band-inner">
+        <div class="mini-card">
+          <h3>Equipment Costs</h3>
+          <p>Clubs, bags, shoes, and balls can make getting started feel expensive immediately.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Course Access</h3>
+          <p>Many students do not have transportation or affordable places nearby to practice.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Beginner Support</h3>
+          <p>Without coaching or beginner programs, new players can feel excluded from the sport.</p>
+        </div>
+      </div>
+    </section>
 
-<section class="section">
-  <img src="images/golf3.jpg">
-  <div class="section-text">
-    <h2>Solutions</h2>
-    <p>Schools can introduce shared equipment programs, partner with local courses, and create beginner-friendly clinics.</p>
-  </div>
-</section>
+    <section class="split-section reverse">
+      <div class="split-image-wrap">
+        <img src="images/golf2.jpg" alt="Golf equipment or course" class="split-image">
+      </div>
+      <div class="split-text glass-card">
+        <p class="section-label">Barriers</p>
+        <h2>Students face more than just price</h2>
+        <p>
+          The barriers to golf are financial, but they are also structural. Transportation, lack of school programs, and limited exposure can make the sport feel inaccessible even when a student is motivated.
+        </p>
+        <ul class="clean-list">
+          <li>High upfront equipment cost</li>
+          <li>Greens fees and practice range costs</li>
+          <li>Limited transportation to local courses</li>
+          <li>Few low-pressure beginner opportunities</li>
+        </ul>
+      </div>
+    </section>
 
-<footer>
-  <p>Access Sports Initiative</p>
-</footer>
+    <section class="split-section">
+      <div class="split-image-wrap">
+        <img src="images/golf3.jpg" alt="Golf lesson or youth players" class="split-image">
+      </div>
+      <div class="split-text glass-card">
+        <p class="section-label">Solutions</p>
+        <h2>Access can be built intentionally</h2>
+        <p>
+          Schools and local organizations can make golf more realistic for students through shared equipment, beginner clinics, and partnerships with local courses or ranges.
+        </p>
+        <p>
+          A simple starting point could be a school-supported introduction program where students borrow clubs, learn the basics, and try the sport without the pressure of major costs.
+        </p>
+      </div>
+    </section>
+  </main>
 
-<script src="script.js"></script>
+  <footer class="site-footer">
+    <p>Access Sports Initiative</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
